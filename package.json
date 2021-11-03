@@ -7,7 +7,12 @@
     "build": "next build",
     "start": "next start"
   },
-  "keywords": ["nextjs", "sql", "vercel", "prisma"],
+  "keywords": [
+    "nextjs",
+    "sql",
+    "vercel",
+    "prisma"
+  ],
   "author": "felipealisboa@outlook.com",
   "license": "MIT",
   "dependencies": {
