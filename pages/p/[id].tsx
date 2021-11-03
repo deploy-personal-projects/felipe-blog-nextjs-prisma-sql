@@ -26,14 +26,14 @@ export const getServerSideProps: GetServerSideProps = async ({ params }) => {
 };
 
 async function publishPost(id: number): Promise<void> {
-  await fetch(`https://felipe-blog-nextjs-prisma-sql.vercel.app/api/publish/${id}`, {
+  await fetch(`${URL}/api/publish/${id}`, {
     method: 'PUT',
   });
   await Router.push('/');
 }
 
 async function deletePost(id: number): Promise<void> {
-  await fetch(`https://felipe-blog-nextjs-prisma-sql.vercel.app/api/post/${id}`, {
+  await fetch(`${URL}/api/post/${id}`, {
     method: 'DELETE',
   });
   Router.push('/');
