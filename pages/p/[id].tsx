@@ -7,7 +7,7 @@ import { PostProps } from '../../components/Post';
 import { useSession } from 'next-auth/client';
 import prisma from '../../lib/prisma';
 
-const URL = "https://felipe-blog-nextjs-prisma-sql.vercel.app"
+const URL = "https://nextjs-prisma-sql-8x9dzat91-felipelisboa.vercel.app"
 
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
   const post = await prisma.post.findUnique({
